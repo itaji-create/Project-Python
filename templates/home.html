@@ -1,0 +1,23 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+   <!--MAIN CONTAINER-->
+
+   <div class="container col-11 col-md-9 " id="main_container">
+    <div class="row align-items-center gx-5 ">
+        <div class="col-md-6 order-md-1" id="texts">
+            <h1 class="display-2">Projeto Python</h1>
+            <h2>Um gerenciador de tarefas e glossário técnico leve e rápido</h2>
+            <a type="button" class="btn btn-success" href="/gerenciador">Gerenciador</a>
+            <a type="button" class="btn btn-success" href="/glossario">Glossário</a>
+        </div>
+        <div class="col-md-6 order-md-2 " id="imagem">
+            <div class="col-12">
+                <img src="{{ url_for('img', filename='home_tasks1.svg') }}" alt="Entrar no Sistema" class="img-fluid ">
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,149 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+   
+   <!--MAIN CONTAINER-->
+
+<div class="container mt-5">
+    
+    <div class="row d-flex justify-content-center">
+        
+        <div class="col-md-8">
+      <div class="card-hover-shadow-2x mb-3 card">
+        <div class="card-header-tab card-header">
+          <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
+            <i class="bi bi-list-task"></i><span class="titulos">Gerenciador de tarefas</span></div>
+          
+        </div>
+        <div class="scroll-area-sm">
+          <perfect-scrollbar class="ps-show-limits">
+            <div style="position: static;" class="ps ps--active-y">
+              <div class="ps-content">
+                <ul class=" list-group list-group-flush">
+                  
+                 
+                  <li class="list-group-item">
+                    <div class="todo-indicator bg-primary"></div>
+                    <div class="widget-content p-0">
+                      <div class="widget-content-wrapper">
+                        <div class="widget-content-left mr-2">
+                          <div class="custom-checkbox custom-control"><input class="custom-control-input"
+                              id="exampleCustomCheckbox4" type="checkbox"><label class="custom-control-label"
+                              for="exampleCustomCheckbox4">&nbsp;</label></div>
+                        </div>
+                        <div class="widget-content-left flex2">
+                          <div class="widget-heading">Pagar aluguel </div>
+                          <div class="widget-subheading">By Victor</div>
+                        </div>
+                        
+                        <div class="widget-content-right">
+                          <button class="border-0 btn-transition btn btn-outline-success">
+                            <i class="bi bi-check"></i></button>
+                          <button class="border-0 btn-transition btn btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="todo-indicator bg-info"></div>
+                    <div class="widget-content p-0">
+                      <div class="widget-content-wrapper">
+                        <div class="widget-content-left mr-2">
+                          <div class="custom-checkbox custom-control"><input class="custom-control-input"
+                              id="exampleCustomCheckbox2" type="checkbox"><label class="custom-control-label"
+                              for="exampleCustomCheckbox2">&nbsp;</label></div>
+                        </div>
+                        
+                        <div class="widget-content-left">
+                          <div class="widget-heading">Fazer compras para o escritório</div>
+                          <div class="widget-subheading">By Itaji</div>
+                        </div>
+                        <div class="widget-content-right">
+                          <button class="border-0 btn-transition btn btn-outline-success">
+                            <i class="bi bi-check"></i></button>
+                          <button class="border-0 btn-transition btn btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="todo-indicator bg-success"></div>
+                    <div class="widget-content p-0">
+                      <div class="widget-content-wrapper">
+                        <div class="widget-content-left mr-2">
+                          <div class="custom-checkbox custom-control"><input class="custom-control-input"
+                              id="exampleCustomCheckbox3" type="checkbox"><label class="custom-control-label"
+                              for="exampleCustomCheckbox3">&nbsp;</label></div>
+                        </div>
+                        <div class="widget-content-left flex2">
+                          <div class="widget-heading">Almoço com os clientes</div>
+                          <div class="widget-subheading">By Gabriel</div>
+                        </div>
+                        
+                        <div class="widget-content-right">
+                          <button class="border-0 btn-transition btn btn-outline-success">
+                            <i class="bi bi-check"></i></button>
+                          <button class="border-0 btn-transition btn btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                        
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="list-group-item">
+                    <div class="todo-indicator bg-success"></div>
+                    <div class="widget-content p-0">
+                      <div class="widget-content-wrapper">
+                        <div class="widget-content-left mr-2">
+                          <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox10"
+                              type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox10">&nbsp;</label></div>
+                        </div>
+                        <div class="widget-content-left flex2">
+                          <div class="widget-heading">Reunião às 10h</div>
+                          <div class="widget-subheading">By Leo</div>
+                        </div>
+                  
+                        <div class="widget-content-right">
+                          <button class="border-0 btn-transition btn btn-outline-success">
+                            <i class="bi bi-check"></i></button>
+                          <button class="border-0 btn-transition btn btn-outline-danger">
+                            <i class="bi bi-trash"></i>
+                  
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+            </div>
+          </perfect-scrollbar>
+        </div>
+        <div class="text-right card-footer">
+            <div class="row">
+              <div class="col-auto ">
+                    <button class="btn btn-primary">Editar</button>
+                </div>
+                <div class="col-auto ms-0">
+                    <button class="btn btn-primary">Adicionar</button>
+                </div>
+                <div class="col-auto">
+                    <input type="text" name="novaTarefa" id="novaTarefa" placeholder="Digite uma nova tarefa" class="form-control">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}

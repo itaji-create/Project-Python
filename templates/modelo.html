@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js defer" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script><link rel="stylesheet" href="{{ url_for('css', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('css', filename='style.css') }}">
+
+    <title>Projeto Python</title>
+</head>
+<body>
+   <!--NAVBAR-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid ">
+        <a href="/home"><img src="{{ url_for('img', filename='logo01.png') }}" alt="Home Image" width="100px"></a>
+        <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="/home" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/gerenciador" class="nav-link" >Gerenciador</a>
+            </li>
+            <li class="nav-item">
+                <a href="/glossario" class="nav-link" >Glossário</a>
+            </li>
+             <li class="nav-item">
+                <a href="/sobre" class="nav-link" >Sobre</a>
+            </li>
+        </ul>
+    </div>
+   
+    </div>
+   </nav>
+   <!--MAIN CONTAINER-->
+   {% block conteudo %} {% endblock %}
+</body>
+</html>
