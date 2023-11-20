@@ -17,7 +17,9 @@ def home():
 
 @app.route('/gerenciador')
 def gerenciador():
-    return render_template("gerenciador.html")
+    with open('tarefas.txt', 'r') as arquivo:
+        tarefas = arquivo.readlines()
+    return render_template("gerenciador.html", tarefas=tarefas)
 
 @app.route('/salvar', methods=['POST'])
 def salvar():
