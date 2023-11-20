@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, request
 
 app = Flask(__name__)
 
@@ -18,6 +18,17 @@ def home():
 @app.route('/gerenciador')
 def gerenciador():
     return render_template("gerenciador.html")
+
+@app.route('/salvar', methods=['POST'])
+def salvar():
+    if request.method == 'POST':
+        tarefa = request.form['tarefa']
+
+        with open('tarefas.txt', 'a') as arquivo:
+            arquivo.write(tarefa + '\n')
+
+        print('Tarefa salva!')
+        return render_template("gerenciador.html")
 
 @app.route('/glossario')
 def glossario():

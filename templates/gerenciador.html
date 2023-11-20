@@ -130,15 +130,10 @@
         </div>
         <div class="text-right card-footer">
             <div class="row">
-              <div class="col-auto ">
-                    <button class="btn btn-primary">Editar</button>
-                </div>
-                <div class="col-auto ms-0">
-                    <button class="btn btn-primary">Adicionar</button>
-                </div>
-                <div class="col-auto">
-                    <input type="text" name="novaTarefa" id="novaTarefa" placeholder="Digite uma nova tarefa" class="form-control">
-                </div>
+                <form action="/salvar", method="post">
+                  <input type="text" name="tarefa" id="tarefa" placeholder="Digite uma nova tarefa" class="form-control">
+                  <input class="btn btn-primary" type="submit" value="Adicionar">
+                </form>
             </div>
         </div>
       </div>
