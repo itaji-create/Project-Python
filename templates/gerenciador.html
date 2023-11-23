@@ -18,111 +18,13 @@
           <perfect-scrollbar class="ps-show-limits">
             <div style="position: static;" class="ps ps--active-y">
               <div class="ps-content">
-                <ul class=" list-group list-group-flush">
-                  
-                 
-                  <li class="list-group-item">
-                    <div class="todo-indicator bg-primary"></div>
-                    <div class="widget-content p-0">
-                      <div class="widget-content-wrapper">
-                        <div class="widget-content-left mr-2">
-                          <div class="custom-checkbox custom-control"><input class="custom-control-input"
-                              id="exampleCustomCheckbox4" type="checkbox"><label class="custom-control-label"
-                              for="exampleCustomCheckbox4">&nbsp;</label></div>
-                        </div>
-                        <div class="widget-content-left flex2">
-                          <div class="widget-heading">Pagar aluguel </div>
-                          <div class="widget-subheading">By Victor</div>
-                        </div>
-                        
-                        <div class="widget-content-right">
-                          <button class="border-0 btn-transition btn btn-outline-success">
-                            <i class="bi bi-check"></i></button>
-                          <button class="border-0 btn-transition btn btn-outline-danger">
-                            <i class="bi bi-trash"></i>
-                        
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="todo-indicator bg-info"></div>
-                    <div class="widget-content p-0">
-                      <div class="widget-content-wrapper">
-                        <div class="widget-content-left mr-2">
-                          <div class="custom-checkbox custom-control"><input class="custom-control-input"
-                              id="exampleCustomCheckbox2" type="checkbox"><label class="custom-control-label"
-                              for="exampleCustomCheckbox2">&nbsp;</label></div>
-                        </div>
-                        
-                        <div class="widget-content-left">
-                          <div class="widget-heading">Fazer compras para o escritório</div>
-                          <div class="widget-subheading">By Itaji</div>
-                        </div>
-                        <div class="widget-content-right">
-                          <button class="border-0 btn-transition btn btn-outline-success">
-                            <i class="bi bi-check"></i></button>
-                          <button class="border-0 btn-transition btn btn-outline-danger">
-                            <i class="bi bi-trash"></i>
-                        
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="todo-indicator bg-success"></div>
-                    <div class="widget-content p-0">
-                      <div class="widget-content-wrapper">
-                        <div class="widget-content-left mr-2">
-                          <div class="custom-checkbox custom-control"><input class="custom-control-input"
-                              id="exampleCustomCheckbox3" type="checkbox"><label class="custom-control-label"
-                              for="exampleCustomCheckbox3">&nbsp;</label></div>
-                        </div>
-                        <div class="widget-content-left flex2">
-                          <div class="widget-heading">Almoço com os clientes</div>
-                          <div class="widget-subheading">By Gabriel</div>
-                        </div>
-                        
-                        <div class="widget-content-right">
-                          <button class="border-0 btn-transition btn btn-outline-success">
-                            <i class="bi bi-check"></i></button>
-                          <button class="border-0 btn-transition btn btn-outline-danger">
-                            <i class="bi bi-trash"></i>
-                        
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="list-group-item">
-                    <div class="todo-indicator bg-success"></div>
-                    <div class="widget-content p-0">
-                      <div class="widget-content-wrapper">
-                        <div class="widget-content-left mr-2">
-                          <div class="custom-checkbox custom-control"><input class="custom-control-input" id="exampleCustomCheckbox10"
-                              type="checkbox"><label class="custom-control-label" for="exampleCustomCheckbox10">&nbsp;</label></div>
-                        </div>
-                        <div class="widget-content-left flex2">
-                          <div class="widget-heading">Reunião às 10h</div>
-                          <div class="widget-subheading">By Leo</div>
-                        </div>
-                  
-                        <div class="widget-content-right">
-                          <button class="border-0 btn-transition btn btn-outline-success">
-                            <i class="bi bi-check"></i></button>
-                          <button class="border-0 btn-transition btn btn-outline-danger">
-                            <i class="bi bi-trash"></i>
-                  
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  
-                </ul>
+                 <div id="tarefas">
+                    <ul class="list-group">
+                      {% for tarefa in tarefas %}
+                        <li class="list-group-item list-group-item-light">{{ tarefa }} </li>
+                      {% endfor %}
+                    </ul>
+                </div>
               </div>
               
             </div>
@@ -136,13 +38,7 @@
                 </form>
             </div>
         </div>
-        <div id="tarefas">
-          <ul>
-            {% for tarefa in tarefas %}
-              <li>{{ tarefa }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+
       </div>
     </div>
 </div>
