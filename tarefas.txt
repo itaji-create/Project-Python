@@ -1,4 +1,3 @@
 pagar aluguel
-teste
-teste
-teste 2
+pagar faculdade
+estudar python

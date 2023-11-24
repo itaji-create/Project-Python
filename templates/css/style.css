@@ -167,6 +167,7 @@ i {
     margin-left: auto;
 }
 
+
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }

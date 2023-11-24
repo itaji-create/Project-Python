@@ -19,9 +19,9 @@
             <div style="position: static;" class="ps ps--active-y">
               <div class="ps-content">
                  <div id="tarefas">
-                    <ul class="list-group">
+                    <ul class="list-group list-group-flush">
                       {% for tarefa in tarefas %}
-                        <li class="list-group-item list-group-item-light">{{ tarefa }} </li>
+                        <li class="list-group-item mb-1 list-group-item-warning text-success" >{{ tarefa }} </li>
                       {% endfor %}
                     </ul>
                 </div>
@@ -34,7 +34,7 @@
             <div class="row">
                 <form action="/salvar", method="post">
                   <input type="text" name="tarefa" id="tarefa" placeholder="Digite uma nova tarefa" class="form-control">
-                  <input class="btn btn-primary" type="submit" value="Adicionar">
+                  <input class="btn btn-primary mt-2" type="submit" value="Adicionar">
                 </form>
             </div>
         </div>
