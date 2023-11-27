@@ -207,6 +207,7 @@ i {
 .card-footer{
     background-color: #fff;
 }
+
 @media(min-width: 768px){
    
     .btn.btn-success{
